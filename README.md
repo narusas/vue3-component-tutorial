@@ -7,6 +7,10 @@
 npm install 
 ```
 
+## Chrome
+Vue Devtools 설치
+
+
 ## VS Code
 
 ### 플러그인 설치 
