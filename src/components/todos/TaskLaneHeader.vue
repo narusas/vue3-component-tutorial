@@ -5,10 +5,19 @@
     </h1>
   </div>
 </template>
-<script setup="props">
+<script setup>
+import { defineProps } from 'vue'
+
+const props = defineProps({
+  taskLane: Object
+});
+
 import { ref } from 'vue';
 import { StarIcon } from '@heroicons/vue/solid';
-import {useTaskLane} from './todos';
-const laneHeader = ref('Backlogs');
-const favoriteLane = ref(true);
+
+
+
+ref: laneHeader = 'Backlogs';
+ref: favoriteLane = true;
+ref: isEditing = false;
 </script>
