@@ -1,7 +1,7 @@
 <template>
   <div class="mb-10 ">
     <h1 class="text-2xl font-bold flex ">
-      <star-icon v-if="favoriteLane" class="text-yellow-300 text-3xl h-8 w-8 leading-none align-bottom" />{{ laneHeader }}
+      <star-icon v-if="todoInfo.favorite" class="text-yellow-300 text-3xl h-8 w-8 leading-none align-bottom" />{{ todoInfo.title }}
     </h1>
   </div>
 </template>
@@ -9,7 +9,7 @@
 import { defineProps } from 'vue'
 
 const props = defineProps({
-  taskLane: Object
+  todoInfo: Object
 });
 
 import { ref } from 'vue';
